@@ -39,9 +39,9 @@
 
     <!-- Right Images -->
     <div class="rent-images">
-      <div class="img-back"><img src="media/static/core/images/banner.PNG" alt="Jewelry Model"></div>
+      <div class="img-back"><img src="media/static/core/images/banner.png" alt="Jewelry Model"></div>
       <div class="img-front">
-        <img src="media/static/core/images/banner.PNG" alt="Jewelry Model">
+        <img src="media/static/core/images/banner.png" alt="Jewelry Model">
       </div>
     </div>
   </div>
@@ -105,7 +105,12 @@
         <!-- Price & Rent Now -->
         <div class="product-footer">
           <span class="price">₹{{ product.price_per_day }}/day</span>
-          <a href="#" class="btn-rent">Rent Now</a>
+            {% if user.is_authenticated %}
+      <a href="{% url 'add_to_cart' product.id %}" onclick=" alert('✅ {{ product.name }} rented successfully!');"
+        class="btn-rent">Rent Now</a>
+      {% else %}
+      <a href="{% url 'login' %}" onclick="alert('⚠️ Please login to rent this product');" class="btn-rent">Rent Now</a>
+      {% endif %}
         </div>
       </div>
       {% endfor %}
