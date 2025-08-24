@@ -1,0 +1,164 @@
+.product-detail-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  align-items: start;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.thumbnails img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+.thumbnails img:hover {
+  transform: scale(1.05);
+}
+
+.main-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  animation: fadeIn 1s;
+}
+
+.product-info {
+  padding: 10px;
+}
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.options .option {
+  margin: 5px 0;
+}
+.btn-customize {
+  background: #32cd32;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-customize:hover {
+  background: #28a428;
+}
+
+.colors {
+  margin: 15px 0;
+}
+.color-swatch {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.purchase {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.quantity input {
+  width: 40px;
+  text-align: center;
+  border: none;
+}
+.quantity button {
+  background: #f0f0f0;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.btn-book {
+  background: #28a745;
+  color: white;
+  padding: 8px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-book:hover {
+  background: #218838;
+}
+
+.details-tabs {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.details-tabs .tab {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.details-tabs .tab:hover {
+  background: #f8f8f8;
+}
+
+.description {
+  margin: 40px auto;
+  max-width: 900px;
+}
+.description h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.related-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  align-items: center;
+}
+.related-img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.related-img:hover {
+  transform: scale(1.05);
+}
+.related-video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
