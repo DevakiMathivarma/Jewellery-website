@@ -276,6 +276,32 @@
         text-shadow: 3px 6px 15px rgba(0, 0, 0, 0.8);
         transition: all .4s ease-in-out;
     }
+        @media (max-width:1024px){
+        .product-grid {
+       
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    }
+    @media (max-width:768px){
+        .product-grid {
+       
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    }
+    @media (max-width:600px){
+            .rental-container {
+       grid-template-columns: repeat(1,1fr);
+       margin: auto 20px;
+        
+    }
+       .product-grid {
+       
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    }
 </style>
 {% endblock %}
 

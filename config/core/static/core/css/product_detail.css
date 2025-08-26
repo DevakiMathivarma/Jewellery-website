@@ -1,13 +1,4 @@
-/* .product-card {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  background: #fff !important;
-  color: #000 !important;
-}
-.product-card img {
-  border: 2px solid red !important;
-} */
+
 body{
   overflow-x: hidden;
 }
@@ -207,6 +198,22 @@ body{
   0% { transform: scale(1); }
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
+}
+@media (max-width:1024px){
+  body{
+    overflow-x: hidden;
+  }
+  html{
+    overflow-y: auto;
+  }
+    .product-card{
+    margin:auto 20px
+  }
+}
+@media (max-width:768px){
+  .product-card{
+    margin:auto 20px
+  }
 }
 
 

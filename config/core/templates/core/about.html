@@ -96,6 +96,32 @@ font-weight: 700;
   from { opacity:0; transform: translateY(-20px); }
   to { opacity:1; transform:none; }
 }
+@media(max-width:768px){
+    .about-images{
+    grid-template-columns: repeat(2,1fr);
+    margin: auto 10px;
+  }
+   .about-content{
+    font-size: 18px;
+    margin: auto 10px;
+  }
+  .why-section{
+    margin: auto 10px;
+  }
+}
+@media (max-width:600px){
+  .about-images{
+    grid-template-columns: repeat(1,1fr);
+    margin: auto 10px;
+  }
+  .about-content{
+    font-size: 18px;
+    margin: auto 10px;
+  }
+  .why-section{
+    margin: auto 10px;
+  }
+}
 </style>
 {% endblock %}
 

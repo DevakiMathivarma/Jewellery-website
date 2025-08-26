@@ -95,3 +95,41 @@ margin-left: 200px;
   transition: 0.3s;
 }
 .contact-info a:hover { color: green; }
+@media (max-width:1024){
+  body{overflow-x: hidden;}
+  html{overflow-y: auto;}
+  .banner{
+  max-width: 1090px;
+  overflow-x: hidden;
+}
+}
+@media (max-width:768px){
+  .contact-container{
+  margin: auto 10px;
+}
+.contact-info{
+  margin-left: 100px;
+  margin-top: 30px;
+ 
+}
+.banner{
+  max-width: 1090px;
+}
+}
+@media (max-width:600px){
+.contact-container{
+  grid-template-columns: repeat(1,1fr);
+  margin: auto 10px;
+}
+.contact-info{
+  margin-left: auto;
+ 
+}
+.contact-info a{
+  display: block;
+  padding:10px;
+}
+.breadcrumb{
+  font-size: 18px;
+}
+}
